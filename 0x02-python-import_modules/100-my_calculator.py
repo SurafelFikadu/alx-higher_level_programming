@@ -4,7 +4,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     argv = len(argv)
     if argc != 4:
-        print('Usage: {} <a> <operator> <b>'.format(argv[0]))
+        print('Usage: {} <a> <operator>ii b'.format(argv[0]))
         exit(1)
     ops = {
         '+': add,
