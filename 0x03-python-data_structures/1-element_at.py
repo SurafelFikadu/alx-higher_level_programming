@@ -4,5 +4,3 @@ def element_at(my_list, idx):
     idx = 3
     if idx < 0 and idx != my_list:
         return None
-    else:
-        print("Element at index {:d} is {}".format(idx, element_at(my_list, idx)))
