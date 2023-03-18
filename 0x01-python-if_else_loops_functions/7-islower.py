@@ -1,5 +1,5 @@
 def islower(c):
-    if c islower:
+    if c is lowercase:
         return True
     else:
         return False
