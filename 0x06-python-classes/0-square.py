@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-" " " define a class that define sequre " " "
+""" define a class that define sequre """
 class square:
-    " " " repersents the square " " "
+    """ repersents the square """
