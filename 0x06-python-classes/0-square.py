@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" define a class that define sequre """
-class square:
-    """ repersents the square """
+""" Creates an empty class called Square
+"""
+
+
+class Square:
+    """ Empty class using pass
+    """
     pass
