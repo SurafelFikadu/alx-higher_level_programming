@@ -1,10 +1,15 @@
 #!/usr/bin/python3
-""" a class square that defines a square
+""" Creates an empty class called Square
 """
-class square:
-    """ private instance attribute: size 
+
+
+class Square:
+    """ Empty class with size private attribute
     """
-    def __int__(self, size):
-        """ Insatation with size (no type/value/verfication 
+    def __init__(self, size):
+        """
+                Instantiation with size
+        Args:
+            size: size of the square
         """
         self.__size = size
