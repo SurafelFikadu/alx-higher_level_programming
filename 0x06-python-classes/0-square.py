@@ -2,3 +2,4 @@
 """ define a class that define sequre """
 class square:
     """ repersents the square """
+    pass
