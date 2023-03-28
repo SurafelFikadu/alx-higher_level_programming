@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+
 /**
  * check_cycle - cycle tortoise and hare
  * @list: pointer to head
