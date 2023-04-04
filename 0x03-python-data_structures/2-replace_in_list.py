@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-my_list = [1, 2, 3, 4, 5]
 def replace_in_list(my_list, idx, element):
-    idx = 3
-    my_list = [1, 2, 3, 4, 5]
-    print(my_list)
-    new_element = 9
-    if idx < 0 and idx != my_list:
-        return my_list
-    my_list[3] = new_element
-    print(my_list)
-new_element = 9
-print(my_list)
-my_list[3] = new_element
-print(my_list)
+    for x in my_list:
+        if idx == my_list.index(x):
+            my_list.pop(idx)
+            my_list.insert(idx, element)
+            return (my_list)
+        elif idx >= len(my_list):
+            return (my_list)
+        elif idx < 0:
+            return (my_list)
