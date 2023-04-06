@@ -27,7 +27,5 @@ def print_aquare(size):
     if isinstance(size, float):
         raise TypeError("size must be an integer")
 
-
     for i in range(size):
-        [print("#", end="") for j in range(size)]
-        print("")
+        print("#" * size)
