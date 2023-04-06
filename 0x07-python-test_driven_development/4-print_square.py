@@ -1,32 +1,20 @@
 #!/usr/bin/python3
 """
-
-This module is composed by a function that prints a square #
-
+    No module allowed to be imported
 """
 
-def print_aquare(size):
-    """ Function that prints a square with the character #
 
-    Args:
-        size: size of squares printed
-
-    Returns:
-        No return
-
-    Raises:
-        TypeError: If size is not integer number
-
-
+def print_square(size):
     """
-
-    if not isinstance(size, int):
-        raise ValueError("size must be an integer")
+        prints a square with the character #
+    """
+    if type(size) != int:
+        raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
-    if isinstance(size, float):
+    if type(size) == float and size < 0:
         raise TypeError("size must be an integer")
     for i in range(size):
-        for j in range("#", end=""):
+        for j in range(size):
             print("#", end="")
         print()
