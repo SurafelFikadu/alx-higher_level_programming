@@ -1,36 +1,30 @@
 #!/usr/bin/python3
 """
-
-Module composed by a function  that prints 2 new lines after ".?:" characters
-
+    Module containing text indentation function
 """
 
 
 def text_indentation(text):
-    """ Function that prints 2 new lines after ".?:" characters
+    """ Text indentation function
 
     Args:
-        text: input string
-
-    Returns:
-        No return
-
-    Raises:
-        TypeError: If text is not a string
-
-
+        text (str): A string of text
     """
 
-    if type(text) is not a str:
-        raise TypeError("text must be string")
+    if type(text) is not str:
+        raise TypeError("text must be a string")
 
-    s = text[:]
-
-    for d in ".?:":
-        list_text = s.split(d)
-        s = ""
-        for i in list_text:
-            i = i.strip(" ")
-            s = i + d if s "" else s + "\n\n" + i + d
-
-    print(s[:-3], end="")
+    no_space = True
+    size = 0
+    text = text.strip()
+    new_text = ""
+    for x in text:
+        if x is " " and no_space:
+            pass
+        elif x is "." or x is "?" or x is ":":
+            new_text += x + "\n\n"
+            no_space = True
+        else:
+            new_text += x
+            no_space = False
+    print(new_text, end='')
