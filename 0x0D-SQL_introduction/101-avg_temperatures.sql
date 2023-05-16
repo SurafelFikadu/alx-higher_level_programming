@@ -1,5 +1,6 @@
--- displays teh average temp by city
--- ordered by temperature desc
+-- displays average temp by city
+-- ordered by temperature
+
 
 SELECT city, AVG(value) as avg_temp
 FROM temperatures
