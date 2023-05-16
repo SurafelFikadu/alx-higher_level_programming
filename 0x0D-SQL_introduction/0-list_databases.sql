@@ -1,2 +1,3 @@
--- list all databases of the MySQL
+-- list all databases of the MySQL srever.
+
 SHOW DATABASES;
