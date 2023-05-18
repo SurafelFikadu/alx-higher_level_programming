@@ -1,1 +1,1 @@
-0x0d sql Introduction please work
+0x0d sql Introduction
